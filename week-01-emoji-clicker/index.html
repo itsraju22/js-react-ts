@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Emoji Clicker</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <main class="container">
+        <h1>Emoji Clicker 🎯</h1>
+        <div class="score">Score: <span id="score">0</span></div> <button id="clickBtn" class="primary">+1 🎉</button>
+        <section class="store"> <button id="power5Btn" class="secondary" disabled>Unlock +5 (50 pts)</button> <button
+                id="resetBtn" class="danger">Reset</button> </section>
+        <div id="milestone" aria-live="polite"></div>
+    </main>
+    <script src="./app.js" type="module"></script>
+</body>
+
+</html>
