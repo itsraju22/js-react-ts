@@ -70,6 +70,10 @@ button:disabled {
     animation: pulse 0.6s ease;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .pulse { animation: none; }
+}
+
 @keyframes pulse {
     0% {
         transform: scale(1)

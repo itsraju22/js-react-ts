@@ -11,11 +11,19 @@
 <body>
     <main class="container">
         <h1>Emoji Clicker 🎯</h1>
-        <div class="score">Score: <span id="score">0</span></div> <button id="clickBtn" class="primary">+1 🎉</button>
-        <section class="store"> <button id="power5Btn" class="secondary" disabled>Unlock +5 (50 pts)</button> <button
-                id="resetBtn" class="danger">Reset</button> </section>
-        <div id="milestone" aria-live="polite"></div>
+        <div class="score" aria-live="polite" aria-atomic="true">
+            Score: <span id="score">0</span>
+        </div>
+        <button id="clickBtn" class="primary" aria-label="Increase score">+1 🎉</button>
+        <section class="store" aria-label="Store">
+            <button id="power5Btn" class="secondary" disabled aria-label="Unlock plus five power for fifty points">
+                Unlock +5 (50 pts)
+            </button>
+            <button id="resetBtn" class="danger" aria-label="Reset score">Reset</button>
+        </section>
+        <div id="milestone" aria-live="polite" aria-atomic="true"></div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <script src="./app.js" type="module"></script>
 </body>
 
